@@ -115,4 +115,4 @@
 
 - name: start httpd service
   shell: |
-    docker exec compass-deck bash -c "systemctl start httpd"
+    docker exec compass-deck bash -c "/usr/sbin/httpd"
