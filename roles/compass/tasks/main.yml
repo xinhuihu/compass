@@ -68,12 +68,6 @@
              "{{ docker_compose_dir }}"/ansible/$i
     done
 
-- name: copy k8s ansible scripts into ansible folder
-  shell: |
-    for i in `ls "{{ docker_compose_dir }}/ansible" | grep "kubernetes"`; do
-        cp -rf "{{ docker_compose_dir }}"/ansible/kubernetes/* \
-             "{{ docker_compose_dir }}"/ansible/$i
-    done
 
 - name: create run dir
   file:
